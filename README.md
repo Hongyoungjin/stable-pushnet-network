@@ -7,16 +7,20 @@
 # 1. Setup
 ### 1. Install ROS
 Tested on ros-noetic versions. [ROS Install](http://wiki.ros.org/noetic/Installation/Ubuntu)
-### 2. Workspace
-Make catkin workspace
+### 2. Catkin Workspace
 ```bash
+# Make catkin workspace
 mkdir -p ~/catkin_ws/src
-```
-Clone the current git repository
-```bash
-git clone https://github.com/Hongyoungjin/stable-pushnet-network.git
-```
+cd ~/catkin_ws/src
 
+# Clone git repo
+git clone https://github.com/Hongyoungjin/stable-pushnet-network.git
+
+# Catkin workspace
+cd ..
+catkin_ws
+cd src
+```
 ### 3. Dependencies
 ```bash
 pip install -r requirements.txt
