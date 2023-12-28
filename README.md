@@ -81,7 +81,7 @@ Set configuration in "feature" directory in [config.yaml](/config.yaml).
 
 | ![Image 1](figures/feature_plot_3D.png) | ![Image 2](figures/feature_plot_2D.png) |
 |:-----------------------------------------------:|:-----------------------------------------------:|
-|                 Feature Plot (3D)                  |              Feature Plot (2D) 2                       |
+|                 Feature Plot (3D)                  |              Feature Plot (2D)                     |
 
 ### 3. Network Output Visualization
 For a given network input image, plots the network output (0~1) throughout the input velocity half-sphere.
