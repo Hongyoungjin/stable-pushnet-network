@@ -1,0 +1,4 @@
+<launch>
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find stable_pushnet_ros)/rviz_config/example.rviz"> </node>
+  <!-- <node name="stable_push_task" pkg="stable_pushnet_ros" type="example.py" output="screen" > </node> -->
+</launch>

@@ -1,0 +1,14 @@
+<launch>
+  <arg name="node_name" default="stable_push_planner" />
+  <remap from="/camera/depth_original/image_raw"   to="/camera/depth/image_raw"/>
+  <remap from="/camera/depth_original/camera_info"   to="/camera/depth/camera_info"/>
+
+  <remap from="/camera/points/xyzrgba"   to="/camera/depth/color/points"/>
+  
+  <remap from="/camera/depth/image_raw"   to="/camera/aligned_depth_to_color/image_raw"/>
+  <remap from="/camera/depth/camera_info"   to="/camera/aligned_depth_to_color/camera_info"/>
+
+  <node name="$(arg node_name)" pkg="stable_pushnet_ros" type="ros_node.py" output="screen" >
+    <rosparam command="load" file="$(find stable_pushnet_ros)/config.yaml" />
+  </node>
+</launch>
